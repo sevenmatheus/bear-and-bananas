@@ -8,3 +8,4 @@ app.get('/api/mercadopago', (request, response) => {
 })
 
 app.listen(port, () => console.log(`Server running in port ${port}`))
+module.exports = app;
