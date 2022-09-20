@@ -7,7 +7,8 @@ app.get('/api/mercadopago', (request, response) => {
     response.send('Works!')
 })
 
-app.post('/api/mercadopago', (request, response) => { 
+app.post('/api/mercadopago', (request, response) => {
+    console.log(request.body) 
     response.send(request.body)
 })
 
