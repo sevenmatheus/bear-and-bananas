@@ -107,9 +107,13 @@ app.get('/api/mercadopago', async function(request, response) {
         else
         { 
             const paymentStatus = await getPaymentStatus()
-            const updatePaymentStatus = await updatePaymentStatus(paymentStatus);
+            //const updatePaymentStatus = await updatePaymentStatus(paymentStatus);
+            //return updatePaymentStatus;
 
-            return updatePaymentStatus;
+            console.log(paymentStatus);
+            
+            response.sendStatus(200)
+
 
         }
     }else{ 
